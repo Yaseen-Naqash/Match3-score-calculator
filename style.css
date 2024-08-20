@@ -1,0 +1,79 @@
+
+
+/* written by Yaseen */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+#grid {
+    display: grid;
+    grid-template-columns: repeat(8, 80px);
+    grid-template-rows: repeat(5, 120px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.cell {
+    width: 80px;
+    height: 120px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+#hand {
+    display: flex;
+    gap: 10px;
+}
+.card {
+    width: 80px;
+    height: 120px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #fff;
+}
+.red {
+    color: red;
+}
+.black {
+    color: black;
+}
+
+.card-list-grid {
+display: flex;
+background-color: white;
+border: 1px solid #ccc;
+padding: 10px;
+z-index: 1000;
+position: absolute;
+}
+
+.card-column {
+margin: 0 10px;
+flex: 1;
+}
+
+.suit-header {
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+.card-option {
+padding: 5px;
+cursor: pointer;
+}
+
+.card-option:hover {
+background-color: #f0f0f0;
+}
